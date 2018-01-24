@@ -1,21 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Connexion
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-img src="assets/imgs/logo.png" alt="Logo" width="100%" height="auto"></ion-img>
   <ion-item>
-    <ion-label color="primary">Email</ion-label>
-    <ion-input type="email" placeholder="Text Input" [(ngModel)]="user"></ion-input>
+    <ion-label stacked>Email</ion-label>
+    <ion-input type="email" placeholder="Votre email" [(ngModel)]="user"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label color="primary" fixed>Mot de passe</ion-label>
-    <ion-input type="password" placeholder="Tel Input" [(ngModel)]="password"></ion-input>
+    <ion-label stacked>Mot de passe</ion-label>
+    <ion-input type="password" placeholder="Votre mot de passe" [(ngModel)]="password"></ion-input>
   </ion-item>
   
-  <button ion-button full (tap)="login(user, password)">Full Button</button>
+  <button ion-button full (tap)="login(user, password)">CONNEXION</button>
 </ion-content>
